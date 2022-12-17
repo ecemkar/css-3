@@ -1,0 +1,183 @@
+.header {
+    /* ul deki noktaları kaldırır */
+    list-style-type: none;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    /* yazıları sola köşeledi */
+    padding-left: 0;
+    /* hidden kutunun içindeki yazı taşarsa göstermez. */
+    overflow: hidden;
+    margin: 10px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.header-left a { 
+    /* kutuların blok şeklini almasını sağlar */
+    display: block;
+    /* sola doğru yan yana yazılırlar */
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    color: black;
+    text-align: center;
+    /* saat yönünde etrafa olan mesafesi */
+    padding: 15px 5px 5px 5px;
+    /* yazının altında çizgi yok */
+    text-decoration: none;
+
+}
+
+.headerli a {
+    display: block;
+    float: right;
+    color: black;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 5px;
+
+}
+
+.prof-pic {
+    /* profil resmi yuvarlak oldu */
+    border-radius: 50%;
+}
+
+.container {
+    text-align: center;
+    margin: 90px;
+}
+
+.search {
+    position: relative;
+    height: 100%;
+
+}
+
+.searchdiv {
+    border: #dfe1e5 solid 1px;
+    width: 582px;
+    height: 44px;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+    /* esnek kutu özelliği */
+    display: flex;
+    /* katmanların z eksenindeki konumu belirlemek için kullanılıyor */
+    z-index: 3;
+    box-shadow: none;
+    border-radius: 24px;
+    margin-top: 25px;
+}
+
+.searchdiv:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.searchinput{
+    /* uzun kelimelerin bölünüp bir sonraki satıra geçmesini sağlar */
+    word-wrap: break-word;
+    /* kenarları sınırları yok şeffaf */
+    border: none transparent;
+    /* outline sınırların dışında ögenin etrafına çizilen bir anahat çizgi */
+    outline: 0;
+    height: 34px;
+    width: 403px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.voicelogo {
+    width: 30px;
+    margin-left: 110px;
+}
+
+.btn {
+    display: flex;
+    /* esnek ögeleri kabın kutunun ortasına hizalar */
+    justify-content: center;
+    /* ögeler kabın taban çizgisinde konumlandırılır */
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.googlesearch {
+    margin: 11px 10px;
+    /* üst ve alt boşluk 3px sağ ve sol 15px olmalı */
+    padding: 3px 15px;
+    line-height: 36px;
+    min-width: 54px;
+    text-align: center;
+    /* cursor yani imleç pointer yani el şeklinde olsun demek */
+    cursor: pointer;
+    /* bir ögenin metninin seçilip seçilmeyeceğini belirtir. none metnin seçilemeyeceğini, çift tıklandığı zaman vurgulanmayacağını belirtir  */
+    user-select: none;
+    border: 1px;
+    border-radius: 5px;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.feelinglucky {
+    padding: 3px 15px;
+    line-height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px;
+    border-radius: 5px;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+
+.footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #dfe1e5;
+    border-top: 1px solid #dadce0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: -8px;
+    line-height: 10px;
+    list-style-type: none;
+    background-color: #f2f2f2;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-left a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    color: #70757a;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin-left: 14px;
+    margin-right: -20px;
+    padding: 14px 16px;
+}
+
+.footer-right a {
+    display: block;
+    float: right;
+    color: #70757a;
+    text-align: center;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin-right: 14px;
+    margin-left: -20px;
+    padding: 14px 16px;
+ }   
